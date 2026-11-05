@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Scott Rowan · ClickSynaps</title>
+<meta name="description" content="Scott Rowan, Founder | Director of ClickSynaps. Custom AI-Augmented Solutions.">
+<meta name="theme-color" content="#120e1a">
+<link rel="stylesheet" href="../assets/fonts.css">
+<style>
+:root{--purple:#55418a;--lift:#2ba372;--light:#b3a2e2;--lav:#9689b6;--tint:#eeecf3;--night:#120e1a;--ink:#2a2533;--soft:#5f586b;--paper:#fff;--rule:#e6e2ee}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--night);color:var(--ink);font:16px/1.55 "DM Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+
+.page{min-height:100vh;display:flex;flex-direction:column}
+.hero{position:relative;color:#fff;background:var(--night) url(synapse.jpg) 62% 50%/cover no-repeat;padding:22px 20px 0}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,14,26,.15) 0%,rgba(18,14,26,.35) 55%,rgba(85,65,138,.92) 100%)}
+.hero>*{position:relative;z-index:1}
+.logo{width:88%;max-width:320px;display:block;margin:34px auto 0}
+.who{padding:40px 0 26px;display:flex;align-items:flex-end;gap:16px}
+.photo{width:92px;height:92px;flex:none;border-radius:50%;border:3px solid #fff;background:var(--purple);display:grid;place-items:center;font-weight:600;font-size:30px;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover}
+.name{font-size:32px;font-weight:600;line-height:1.05;letter-spacing:-.4px;margin:0}
+.role{color:var(--light);font-weight:500;font-size:15px;margin-top:4px}
+.tag{background:var(--purple);color:#fff;padding:0 20px 22px;font-size:17px;font-weight:700}
+
+.body{background:var(--paper);flex:1;padding:22px 20px 34px;border-radius:20px 20px 0 0;margin-top:-1px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;border-radius:14px;padding:15px;font-weight:600;font-size:16px;margin-bottom:10px}
+.btn svg{width:20px;height:20px;flex:none}
+.save{background:var(--purple);color:#fff}
+.wallet{background:#000;color:#fff}
+.wallet[hidden]{display:none}
+.acts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:8px 0 26px}
+.act{background:var(--tint);border-radius:14px;padding:12px 4px 10px;text-align:center;font-size:13px;color:var(--purple);font-weight:600}
+.act svg{display:block;margin:0 auto 5px;width:22px;height:22px;stroke:var(--purple);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+h2{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--lav);margin:0 0 8px}
+.about p{margin:0 0 12px;color:var(--ink)}
+.list{border-top:1px solid var(--rule);margin-top:22px}
+.list a{display:flex;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px solid var(--rule);font-size:15px}
+.list span:first-child{color:var(--soft)}
+.list span:last-child{color:var(--ink);text-align:right;word-break:break-all}
+.more{display:inline-flex;gap:6px;align-items:center;margin-top:20px;color:var(--purple);font-weight:600}
+.handoff{display:none}
+.foot{background:var(--paper);color:var(--lav);font-size:13px;text-align:center;padding:0 20px 26px}
+
+@media (min-width:860px){
+  body{background:var(--night) url(synapse.jpg) 62% 50%/cover fixed no-repeat}
+  .page{max-width:860px;margin:0 auto;padding:56px 24px 40px;display:grid;grid-template-columns:repeat(2,380px);justify-content:center;gap:28px;align-items:stretch}
+  .card{border-radius:22px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.45);display:flex;flex-direction:column}
+  .card .body{border-radius:0}
+  .side{background:var(--paper);border-radius:22px;padding:34px 30px 30px;box-shadow:0 20px 60px rgba(0,0,0,.45);display:flex;flex-direction:column}
+  .side[hidden]{display:none}
+  .side .about p{font-size:17px;line-height:1.6}
+  .handoff{margin-top:auto;display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;padding:24px 20px;border-radius:16px;background:var(--tint)}
+  .handoff .qr{width:170px;height:170px;background:#fff;border-radius:12px;padding:10px}
+  .handoff .qr svg{width:100%;height:100%;display:block}
+  .handoff b{display:block;color:var(--purple);font-size:18px}
+  .handoff span{color:var(--soft);font-size:14px}
+  .foot{grid-column:1/-1;background:none;color:var(--light);padding:0}
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="card">
+    <header class="hero">
+      <img class="logo" src="clicksynaps_logo_reversed.png" alt="ClickSynaps.ai">
+      <div class="who">
+        <div class="photo"><img src="scott.jpg" alt="Scott Rowan"></div>
+        <div>
+          <h1 class="name">Scott Rowan</h1>
+          <div class="role">Founder | Director</div>
+        </div>
+      </div>
+    </header>
+    <div class="tag">Custom AI-Augmented Solutions</div>
+    <main class="body">
+      <a class="btn save" href="scott.vcf">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10" cy="8" r="4"/><path d="M3 21a7 7 0 0 1 14 0M19 8v6M16 11h6"/></svg>
+        Save Contact
+      </a>
+      <a class="btn wallet" id="wallet" href="scott.pkpass">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 10h18"/></svg>
+        Add to Apple Wallet
+      </a>
+      <div class="acts">
+        <a class="act" href="tel:+61412707570"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Call</a>
+        <a class="act" href="mailto:scott.rowan@clicksynaps.ai"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email</a>
+        <a class="act" href="https://clicksynaps.ai"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>Website</a>
+      </div>
+      <section class="about mobile-about">
+        <h2>About</h2>
+        <p>Scott founded ClickSynaps after 30 years in TV post-production, where the right expert on the right job is everything.</p>
+        <p>Today he works directly with businesses, finding where AI can genuinely lighten the load and building custom solutions around the way they already work.</p>
+      </section>
+      <nav class="list">
+        <a href="tel:+61412707570"><span>Mobile</span><span>+61 412 707 570</span></a>
+        <a href="mailto:scott.rowan@clicksynaps.ai"><span>Email</span><span>scott.rowan@clicksynaps.ai</span></a>
+        <a href="https://clicksynaps.ai"><span>Web</span><span>clicksynaps.ai</span></a>
+      </nav>
+      <a class="more" href="https://clicksynaps.ai">More about ClickSynaps →</a>
+    </main>
+  </div>
+
+  <aside class="side" hidden>
+    <section class="about">
+      <h2>About</h2>
+      <p>Scott founded ClickSynaps after 30 years in TV post-production, where the right expert on the right job is everything.</p>
+      <p>Today he works directly with businesses, finding where AI can genuinely lighten the load and building custom solutions around the way they already work.</p>
+    </section>
+    <div class="handoff">
+      <div class="qr" id="handoff-qr"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 58"  preserveAspectRatio="xMinYMin meet"><rect width="100%" height="100%" fill="white" cx="0" cy="0"/><path d="M0,0l2,0 0,2 -2,0 0,-2z M2,0l2,0 0,2 -2,0 0,-2z M4,0l2,0 0,2 -2,0 0,-2z M6,0l2,0 0,2 -2,0 0,-2z M8,0l2,0 0,2 -2,0 0,-2z M10,0l2,0 0,2 -2,0 0,-2z M12,0l2,0 0,2 -2,0 0,-2z M18,0l2,0 0,2 -2,0 0,-2z M20,0l2,0 0,2 -2,0 0,-2z M24,0l2,0 0,2 -2,0 0,-2z M26,0l2,0 0,2 -2,0 0,-2z M32,0l2,0 0,2 -2,0 0,-2z M34,0l2,0 0,2 -2,0 0,-2z M36,0l2,0 0,2 -2,0 0,-2z M38,0l2,0 0,2 -2,0 0,-2z M40,0l2,0 0,2 -2,0 0,-2z M44,0l2,0 0,2 -2,0 0,-2z M46,0l2,0 0,2 -2,0 0,-2z M48,0l2,0 0,2 -2,0 0,-2z M50,0l2,0 0,2 -2,0 0,-2z M52,0l2,0 0,2 -2,0 0,-2z M54,0l2,0 0,2 -2,0 0,-2z M56,0l2,0 0,2 -2,0 0,-2z M0,2l2,0 0,2 -2,0 0,-2z M12,2l2,0 0,2 -2,0 0,-2z M24,2l2,0 0,2 -2,0 0,-2z M26,2l2,0 0,2 -2,0 0,-2z M28,2l2,0 0,2 -2,0 0,-2z M30,2l2,0 0,2 -2,0 0,-2z M36,2l2,0 0,2 -2,0 0,-2z M40,2l2,0 0,2 -2,0 0,-2z M44,2l2,0 0,2 -2,0 0,-2z M56,2l2,0 0,2 -2,0 0,-2z M0,4l2,0 0,2 -2,0 0,-2z M4,4l2,0 0,2 -2,0 0,-2z M6,4l2,0 0,2 -2,0 0,-2z M8,4l2,0 0,2 -2,0 0,-2z M12,4l2,0 0,2 -2,0 0,-2z M18,4l2,0 0,2 -2,0 0,-2z M26,4l2,0 0,2 -2,0 0,-2z M32,4l2,0 0,2 -2,0 0,-2z M34,4l2,0 0,2 -2,0 0,-2z M44,4l2,0 0,2 -2,0 0,-2z M48,4l2,0 0,2 -2,0 0,-2z M50,4l2,0 0,2 -2,0 0,-2z M52,4l2,0 0,2 -2,0 0,-2z M56,4l2,0 0,2 -2,0 0,-2z M0,6l2,0 0,2 -2,0 0,-2z M4,6l2,0 0,2 -2,0 0,-2z M6,6l2,0 0,2 -2,0 0,-2z M8,6l2,0 0,2 -2,0 0,-2z M12,6l2,0 0,2 -2,0 0,-2z M22,6l2,0 0,2 -2,0 0,-2z M24,6l2,0 0,2 -2,0 0,-2z M26,6l2,0 0,2 -2,0 0,-2z M28,6l2,0 0,2 -2,0 0,-2z M30,6l2,0 0,2 -2,0 0,-2z M36,6l2,0 0,2 -2,0 0,-2z M44,6l2,0 0,2 -2,0 0,-2z M48,6l2,0 0,2 -2,0 0,-2z M50,6l2,0 0,2 -2,0 0,-2z M52,6l2,0 0,2 -2,0 0,-2z M56,6l2,0 0,2 -2,0 0,-2z M0,8l2,0 0,2 -2,0 0,-2z M4,8l2,0 0,2 -2,0 0,-2z M6,8l2,0 0,2 -2,0 0,-2z M8,8l2,0 0,2 -2,0 0,-2z M12,8l2,0 0,2 -2,0 0,-2z M20,8l2,0 0,2 -2,0 0,-2z M22,8l2,0 0,2 -2,0 0,-2z M26,8l2,0 0,2 -2,0 0,-2z M28,8l2,0 0,2 -2,0 0,-2z M32,8l2,0 0,2 -2,0 0,-2z M44,8l2,0 0,2 -2,0 0,-2z M48,8l2,0 0,2 -2,0 0,-2z M50,8l2,0 0,2 -2,0 0,-2z M52,8l2,0 0,2 -2,0 0,-2z M56,8l2,0 0,2 -2,0 0,-2z M0,10l2,0 0,2 -2,0 0,-2z M12,10l2,0 0,2 -2,0 0,-2z M16,10l2,0 0,2 -2,0 0,-2z M18,10l2,0 0,2 -2,0 0,-2z M20,10l2,0 0,2 -2,0 0,-2z M22,10l2,0 0,2 -2,0 0,-2z M24,10l2,0 0,2 -2,0 0,-2z M26,10l2,0 0,2 -2,0 0,-2z M28,10l2,0 0,2 -2,0 0,-2z M34,10l2,0 0,2 -2,0 0,-2z M38,10l2,0 0,2 -2,0 0,-2z M44,10l2,0 0,2 -2,0 0,-2z M56,10l2,0 0,2 -2,0 0,-2z M0,12l2,0 0,2 -2,0 0,-2z M2,12l2,0 0,2 -2,0 0,-2z M4,12l2,0 0,2 -2,0 0,-2z M6,12l2,0 0,2 -2,0 0,-2z M8,12l2,0 0,2 -2,0 0,-2z M10,12l2,0 0,2 -2,0 0,-2z M12,12l2,0 0,2 -2,0 0,-2z M16,12l2,0 0,2 -2,0 0,-2z M20,12l2,0 0,2 -2,0 0,-2z M24,12l2,0 0,2 -2,0 0,-2z M28,12l2,0 0,2 -2,0 0,-2z M32,12l2,0 0,2 -2,0 0,-2z M36,12l2,0 0,2 -2,0 0,-2z M40,12l2,0 0,2 -2,0 0,-2z M44,12l2,0 0,2 -2,0 0,-2z M46,12l2,0 0,2 -2,0 0,-2z M48,12l2,0 0,2 -2,0 0,-2z M50,12l2,0 0,2 -2,0 0,-2z M52,12l2,0 0,2 -2,0 0,-2z M54,12l2,0 0,2 -2,0 0,-2z M56,12l2,0 0,2 -2,0 0,-2z M18,14l2,0 0,2 -2,0 0,-2z M22,14l2,0 0,2 -2,0 0,-2z M24,14l2,0 0,2 -2,0 0,-2z M28,14l2,0 0,2 -2,0 0,-2z M34,14l2,0 0,2 -2,0 0,-2z M36,14l2,0 0,2 -2,0 0,-2z M0,16l2,0 0,2 -2,0 0,-2z M6,16l2,0 0,2 -2,0 0,-2z M10,16l2,0 0,2 -2,0 0,-2z M12,16l2,0 0,2 -2,0 0,-2z M16,16l2,0 0,2 -2,0 0,-2z M20,16l2,0 0,2 -2,0 0,-2z M22,16l2,0 0,2 -2,0 0,-2z M24,16l2,0 0,2 -2,0 0,-2z M30,16l2,0 0,2 -2,0 0,-2z M42,16l2,0 0,2 -2,0 0,-2z M46,16l2,0 0,2 -2,0 0,-2z M2,18l2,0 0,2 -2,0 0,-2z M6,18l2,0 0,2 -2,0 0,-2z M10,18l2,0 0,2 -2,0 0,-2z M14,18l2,0 0,2 -2,0 0,-2z M18,18l2,0 0,2 -2,0 0,-2z M22,18l2,0 0,2 -2,0 0,-2z M28,18l2,0 0,2 -2,0 0,-2z M30,18l2,0 0,2 -2,0 0,-2z M34,18l2,0 0,2 -2,0 0,-2z M40,18l2,0 0,2 -2,0 0,-2z M42,18l2,0 0,2 -2,0 0,-2z M44,18l2,0 0,2 -2,0 0,-2z M50,18l2,0 0,2 -2,0 0,-2z M56,18l2,0 0,2 -2,0 0,-2z M2,20l2,0 0,2 -2,0 0,-2z M8,20l2,0 0,2 -2,0 0,-2z M12,20l2,0 0,2 -2,0 0,-2z M14,20l2,0 0,2 -2,0 0,-2z M16,20l2,0 0,2 -2,0 0,-2z M20,20l2,0 0,2 -2,0 0,-2z M24,20l2,0 0,2 -2,0 0,-2z M32,20l2,0 0,2 -2,0 0,-2z M34,20l2,0 0,2 -2,0 0,-2z M36,20l2,0 0,2 -2,0 0,-2z M38,20l2,0 0,2 -2,0 0,-2z M40,20l2,0 0,2 -2,0 0,-2z M44,20l2,0 0,2 -2,0 0,-2z M46,20l2,0 0,2 -2,0 0,-2z M50,20l2,0 0,2 -2,0 0,-2z M52,20l2,0 0,2 -2,0 0,-2z M54,20l2,0 0,2 -2,0 0,-2z M0,22l2,0 0,2 -2,0 0,-2z M2,22l2,0 0,2 -2,0 0,-2z M8,22l2,0 0,2 -2,0 0,-2z M14,22l2,0 0,2 -2,0 0,-2z M18,22l2,0 0,2 -2,0 0,-2z M22,22l2,0 0,2 -2,0 0,-2z M28,22l2,0 0,2 -2,0 0,-2z M30,22l2,0 0,2 -2,0 0,-2z M36,22l2,0 0,2 -2,0 0,-2z M44,22l2,0 0,2 -2,0 0,-2z M52,22l2,0 0,2 -2,0 0,-2z M54,22l2,0 0,2 -2,0 0,-2z M0,24l2,0 0,2 -2,0 0,-2z M2,24l2,0 0,2 -2,0 0,-2z M4,24l2,0 0,2 -2,0 0,-2z M6,24l2,0 0,2 -2,0 0,-2z M10,24l2,0 0,2 -2,0 0,-2z M12,24l2,0 0,2 -2,0 0,-2z M16,24l2,0 0,2 -2,0 0,-2z M18,24l2,0 0,2 -2,0 0,-2z M20,24l2,0 0,2 -2,0 0,-2z M24,24l2,0 0,2 -2,0 0,-2z M32,24l2,0 0,2 -2,0 0,-2z M34,24l2,0 0,2 -2,0 0,-2z M38,24l2,0 0,2 -2,0 0,-2z M40,24l2,0 0,2 -2,0 0,-2z M42,24l2,0 0,2 -2,0 0,-2z M44,24l2,0 0,2 -2,0 0,-2z M50,24l2,0 0,2 -2,0 0,-2z M54,24l2,0 0,2 -2,0 0,-2z M56,24l2,0 0,2 -2,0 0,-2z M6,26l2,0 0,2 -2,0 0,-2z M18,26l2,0 0,2 -2,0 0,-2z M22,26l2,0 0,2 -2,0 0,-2z M24,26l2,0 0,2 -2,0 0,-2z M30,26l2,0 0,2 -2,0 0,-2z M38,26l2,0 0,2 -2,0 0,-2z M0,28l2,0 0,2 -2,0 0,-2z M2,28l2,0 0,2 -2,0 0,-2z M8,28l2,0 0,2 -2,0 0,-2z M10,28l2,0 0,2 -2,0 0,-2z M12,28l2,0 0,2 -2,0 0,-2z M14,28l2,0 0,2 -2,0 0,-2z M18,28l2,0 0,2 -2,0 0,-2z M20,28l2,0 0,2 -2,0 0,-2z M22,28l2,0 0,2 -2,0 0,-2z M30,28l2,0 0,2 -2,0 0,-2z M32,28l2,0 0,2 -2,0 0,-2z M40,28l2,0 0,2 -2,0 0,-2z M44,28l2,0 0,2 -2,0 0,-2z M48,28l2,0 0,2 -2,0 0,-2z M50,28l2,0 0,2 -2,0 0,-2z M52,28l2,0 0,2 -2,0 0,-2z M54,28l2,0 0,2 -2,0 0,-2z M56,28l2,0 0,2 -2,0 0,-2z M2,30l2,0 0,2 -2,0 0,-2z M6,30l2,0 0,2 -2,0 0,-2z M8,30l2,0 0,2 -2,0 0,-2z M10,30l2,0 0,2 -2,0 0,-2z M14,30l2,0 0,2 -2,0 0,-2z M22,30l2,0 0,2 -2,0 0,-2z M26,30l2,0 0,2 -2,0 0,-2z M28,30l2,0 0,2 -2,0 0,-2z M32,30l2,0 0,2 -2,0 0,-2z M34,30l2,0 0,2 -2,0 0,-2z M36,30l2,0 0,2 -2,0 0,-2z M44,30l2,0 0,2 -2,0 0,-2z M46,30l2,0 0,2 -2,0 0,-2z M48,30l2,0 0,2 -2,0 0,-2z M50,30l2,0 0,2 -2,0 0,-2z M54,30l2,0 0,2 -2,0 0,-2z M0,32l2,0 0,2 -2,0 0,-2z M6,32l2,0 0,2 -2,0 0,-2z M12,32l2,0 0,2 -2,0 0,-2z M16,32l2,0 0,2 -2,0 0,-2z M22,32l2,0 0,2 -2,0 0,-2z M24,32l2,0 0,2 -2,0 0,-2z M26,32l2,0 0,2 -2,0 0,-2z M28,32l2,0 0,2 -2,0 0,-2z M30,32l2,0 0,2 -2,0 0,-2z M32,32l2,0 0,2 -2,0 0,-2z M34,32l2,0 0,2 -2,0 0,-2z M38,32l2,0 0,2 -2,0 0,-2z M42,32l2,0 0,2 -2,0 0,-2z M54,32l2,0 0,2 -2,0 0,-2z M2,34l2,0 0,2 -2,0 0,-2z M4,34l2,0 0,2 -2,0 0,-2z M16,34l2,0 0,2 -2,0 0,-2z M18,34l2,0 0,2 -2,0 0,-2z M30,34l2,0 0,2 -2,0 0,-2z M36,34l2,0 0,2 -2,0 0,-2z M44,34l2,0 0,2 -2,0 0,-2z M46,34l2,0 0,2 -2,0 0,-2z M50,34l2,0 0,2 -2,0 0,-2z M56,34l2,0 0,2 -2,0 0,-2z M0,36l2,0 0,2 -2,0 0,-2z M4,36l2,0 0,2 -2,0 0,-2z M8,36l2,0 0,2 -2,0 0,-2z M10,36l2,0 0,2 -2,0 0,-2z M12,36l2,0 0,2 -2,0 0,-2z M14,36l2,0 0,2 -2,0 0,-2z M18,36l2,0 0,2 -2,0 0,-2z M20,36l2,0 0,2 -2,0 0,-2z M26,36l2,0 0,2 -2,0 0,-2z M40,36l2,0 0,2 -2,0 0,-2z M48,36l2,0 0,2 -2,0 0,-2z M54,36l2,0 0,2 -2,0 0,-2z M56,36l2,0 0,2 -2,0 0,-2z M14,38l2,0 0,2 -2,0 0,-2z M18,38l2,0 0,2 -2,0 0,-2z M22,38l2,0 0,2 -2,0 0,-2z M24,38l2,0 0,2 -2,0 0,-2z M26,38l2,0 0,2 -2,0 0,-2z M30,38l2,0 0,2 -2,0 0,-2z M32,38l2,0 0,2 -2,0 0,-2z M34,38l2,0 0,2 -2,0 0,-2z M44,38l2,0 0,2 -2,0 0,-2z M48,38l2,0 0,2 -2,0 0,-2z M54,38l2,0 0,2 -2,0 0,-2z M56,38l2,0 0,2 -2,0 0,-2z M0,40l2,0 0,2 -2,0 0,-2z M4,40l2,0 0,2 -2,0 0,-2z M6,40l2,0 0,2 -2,0 0,-2z M12,40l2,0 0,2 -2,0 0,-2z M18,40l2,0 0,2 -2,0 0,-2z M22,40l2,0 0,2 -2,0 0,-2z M24,40l2,0 0,2 -2,0 0,-2z M28,40l2,0 0,2 -2,0 0,-2z M32,40l2,0 0,2 -2,0 0,-2z M40,40l2,0 0,2 -2,0 0,-2z M42,40l2,0 0,2 -2,0 0,-2z M44,40l2,0 0,2 -2,0 0,-2z M46,40l2,0 0,2 -2,0 0,-2z M48,40l2,0 0,2 -2,0 0,-2z M52,40l2,0 0,2 -2,0 0,-2z M16,42l2,0 0,2 -2,0 0,-2z M18,42l2,0 0,2 -2,0 0,-2z M20,42l2,0 0,2 -2,0 0,-2z M22,42l2,0 0,2 -2,0 0,-2z M26,42l2,0 0,2 -2,0 0,-2z M30,42l2,0 0,2 -2,0 0,-2z M32,42l2,0 0,2 -2,0 0,-2z M34,42l2,0 0,2 -2,0 0,-2z M36,42l2,0 0,2 -2,0 0,-2z M40,42l2,0 0,2 -2,0 0,-2z M48,42l2,0 0,2 -2,0 0,-2z M52,42l2,0 0,2 -2,0 0,-2z M54,42l2,0 0,2 -2,0 0,-2z M56,42l2,0 0,2 -2,0 0,-2z M0,44l2,0 0,2 -2,0 0,-2z M2,44l2,0 0,2 -2,0 0,-2z M4,44l2,0 0,2 -2,0 0,-2z M6,44l2,0 0,2 -2,0 0,-2z M8,44l2,0 0,2 -2,0 0,-2z M10,44l2,0 0,2 -2,0 0,-2z M12,44l2,0 0,2 -2,0 0,-2z M18,44l2,0 0,2 -2,0 0,-2z M20,44l2,0 0,2 -2,0 0,-2z M22,44l2,0 0,2 -2,0 0,-2z M26,44l2,0 0,2 -2,0 0,-2z M28,44l2,0 0,2 -2,0 0,-2z M30,44l2,0 0,2 -2,0 0,-2z M40,44l2,0 0,2 -2,0 0,-2z M44,44l2,0 0,2 -2,0 0,-2z M48,44l2,0 0,2 -2,0 0,-2z M54,44l2,0 0,2 -2,0 0,-2z M0,46l2,0 0,2 -2,0 0,-2z M12,46l2,0 0,2 -2,0 0,-2z M16,46l2,0 0,2 -2,0 0,-2z M20,46l2,0 0,2 -2,0 0,-2z M22,46l2,0 0,2 -2,0 0,-2z M24,46l2,0 0,2 -2,0 0,-2z M26,46l2,0 0,2 -2,0 0,-2z M32,46l2,0 0,2 -2,0 0,-2z M40,46l2,0 0,2 -2,0 0,-2z M48,46l2,0 0,2 -2,0 0,-2z M50,46l2,0 0,2 -2,0 0,-2z M52,46l2,0 0,2 -2,0 0,-2z M54,46l2,0 0,2 -2,0 0,-2z M0,48l2,0 0,2 -2,0 0,-2z M4,48l2,0 0,2 -2,0 0,-2z M6,48l2,0 0,2 -2,0 0,-2z M8,48l2,0 0,2 -2,0 0,-2z M12,48l2,0 0,2 -2,0 0,-2z M18,48l2,0 0,2 -2,0 0,-2z M20,48l2,0 0,2 -2,0 0,-2z M22,48l2,0 0,2 -2,0 0,-2z M24,48l2,0 0,2 -2,0 0,-2z M28,48l2,0 0,2 -2,0 0,-2z M30,48l2,0 0,2 -2,0 0,-2z M36,48l2,0 0,2 -2,0 0,-2z M40,48l2,0 0,2 -2,0 0,-2z M42,48l2,0 0,2 -2,0 0,-2z M44,48l2,0 0,2 -2,0 0,-2z M46,48l2,0 0,2 -2,0 0,-2z M48,48l2,0 0,2 -2,0 0,-2z M54,48l2,0 0,2 -2,0 0,-2z M0,50l2,0 0,2 -2,0 0,-2z M4,50l2,0 0,2 -2,0 0,-2z M6,50l2,0 0,2 -2,0 0,-2z M8,50l2,0 0,2 -2,0 0,-2z M12,50l2,0 0,2 -2,0 0,-2z M16,50l2,0 0,2 -2,0 0,-2z M18,50l2,0 0,2 -2,0 0,-2z M28,50l2,0 0,2 -2,0 0,-2z M30,50l2,0 0,2 -2,0 0,-2z M32,50l2,0 0,2 -2,0 0,-2z M38,50l2,0 0,2 -2,0 0,-2z M44,50l2,0 0,2 -2,0 0,-2z M46,50l2,0 0,2 -2,0 0,-2z M48,50l2,0 0,2 -2,0 0,-2z M50,50l2,0 0,2 -2,0 0,-2z M52,50l2,0 0,2 -2,0 0,-2z M56,50l2,0 0,2 -2,0 0,-2z M0,52l2,0 0,2 -2,0 0,-2z M4,52l2,0 0,2 -2,0 0,-2z M6,52l2,0 0,2 -2,0 0,-2z M8,52l2,0 0,2 -2,0 0,-2z M12,52l2,0 0,2 -2,0 0,-2z M18,52l2,0 0,2 -2,0 0,-2z M20,52l2,0 0,2 -2,0 0,-2z M26,52l2,0 0,2 -2,0 0,-2z M28,52l2,0 0,2 -2,0 0,-2z M48,52l2,0 0,2 -2,0 0,-2z M50,52l2,0 0,2 -2,0 0,-2z M52,52l2,0 0,2 -2,0 0,-2z M56,52l2,0 0,2 -2,0 0,-2z M0,54l2,0 0,2 -2,0 0,-2z M12,54l2,0 0,2 -2,0 0,-2z M18,54l2,0 0,2 -2,0 0,-2z M30,54l2,0 0,2 -2,0 0,-2z M38,54l2,0 0,2 -2,0 0,-2z M40,54l2,0 0,2 -2,0 0,-2z M44,54l2,0 0,2 -2,0 0,-2z M48,54l2,0 0,2 -2,0 0,-2z M54,54l2,0 0,2 -2,0 0,-2z M0,56l2,0 0,2 -2,0 0,-2z M2,56l2,0 0,2 -2,0 0,-2z M4,56l2,0 0,2 -2,0 0,-2z M6,56l2,0 0,2 -2,0 0,-2z M8,56l2,0 0,2 -2,0 0,-2z M10,56l2,0 0,2 -2,0 0,-2z M12,56l2,0 0,2 -2,0 0,-2z M16,56l2,0 0,2 -2,0 0,-2z M28,56l2,0 0,2 -2,0 0,-2z M40,56l2,0 0,2 -2,0 0,-2z M44,56l2,0 0,2 -2,0 0,-2z M48,56l2,0 0,2 -2,0 0,-2z M50,56l2,0 0,2 -2,0 0,-2z M54,56l2,0 0,2 -2,0 0,-2z " stroke="transparent" fill="black"/></svg></div>
+      <div><b>Take This to Your Phone</b><span>Scan with your phone's camera to open this page there, then save the contact or add the card to Wallet.</span></div>
+    </div>
+  </aside>
+  <div class="foot">clicksynaps.ai/scott</div>
+</div>
+<script>
+const wide = matchMedia("(min-width:860px)");
+const side = document.querySelector(".side"), mob = document.querySelector(".mobile-about");
+function lay(){ side.hidden = !wide.matches; mob.hidden = wide.matches; }
+wide.addEventListener("change", lay); lay();
+const ua = navigator.userAgent, apple = /iPhone|iPad|Macintosh/.test(ua) && !/Android/.test(ua);
+document.getElementById("wallet").hidden = !apple;
+</script>
+</body>
+</html>
